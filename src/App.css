@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+/* variables */
+:root {
+  --white: #dccece;
+  --black: #060404;
+  --blue: dodgerblue;
+
+  --secondary-font: "Aldrich", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
+  box-sizing: border-box;
+  max-width: 1440px;
+  background: var(--black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  color: var(--white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app .header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/astronaut.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* logo */
+.app .header .logo {
+  height: 40px;
+  margin-top: 20px;
+}
+
+#containerRow {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#containerColumn {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  margin: 40px 0px 0px 100px;
 }
 
-.App-link {
-  color: #61dafb;
+/* navbar links */
+.app .header .navbar .link {
+  text-decoration: none;
+  color: var(--white);
+  margin-left: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app .header .navbar .link:hover {
+  color: var(--blue);
+  text-shadow: var(--blue) 1px 1px 15px;
+}
+
+.app .header .text h1 {
+  font-size: 58px;
+  font-family: var(--secondary-font);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.app .header .text h1 span {
+  color: var(--blue);
+}
+
+.app .header .text p {
+  margin: 0px 0px 60px 115px;
+  font-size: 30px;
+}
+
+.app .header .text .buttons a {
+  border: 1px solid var(--white);
+  padding: 15px 30px;
+  margin: 0px 20px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.app .header .text .buttons a:hover {
+  background: var(--blue);
+  border: var(--blue);
 }
