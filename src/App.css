@@ -2,7 +2,7 @@
 :root {
   --white: #dccece;
   --black: #060404;
-  --blue: dodgerblue;
+  --blue: #1e90ff;
 
   --secondary-font: "Aldrich", sans-serif;
 }
@@ -18,6 +18,7 @@ body {
 
 .app {
   color: var(--white);
+  cursor: url(assets/cursor.png) 5 5, move;
 }
 
 .app .header {
@@ -113,9 +114,6 @@ body {
   background: var(--black);
   width: 100vw;
   height: 100vh;
-}
-
-.profile {
 }
 
 .profile img {
