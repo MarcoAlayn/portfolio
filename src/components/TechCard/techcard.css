@@ -1,0 +1,10 @@
+.techCard img {
+  width: 100px;
+}
+
+.techCard p {
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}

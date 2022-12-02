@@ -1,6 +1,16 @@
 import "./App.css";
 import logo from "./assets/logo.png";
 import profile from "./assets/profile.png";
+import TechCard from "./components/TechCard";
+import html from "./assets/logos/1.png";
+import css from "./assets/logos/2.png";
+import js from "./assets/logos/3.png";
+import react from "./assets/logos/4.png";
+import redux from "./assets/logos/5.png";
+import github from "./assets/logos/6.png";
+import npm from "./assets/logos/7.png";
+import photoshop from "./assets/logos/8.png";
+import figma from "./assets/logos/9.png";
 
 function App() {
   return (
@@ -67,7 +77,20 @@ function App() {
         </div>
       </section>
 
-      <section className="tecnologies containerColumn">tecnologies</section>
+      <section className="tecnologies margin">
+        <h3 className="h3">tecnologias que utilizo</h3>
+        <div className="containerRow ">
+          <TechCard name={"html"} img={html} />
+          <TechCard name={"css"} img={css} />
+          <TechCard name={"javascript"} img={js} />
+          <TechCard name={"react"} img={react} />
+          <TechCard name={"redux"} img={redux} />
+          <TechCard name={"github"} img={github} />
+          <TechCard name={"npm"} img={npm} />
+          <TechCard name={"figma"} img={figma} />
+          <TechCard name={"photoshop"} img={photoshop} />
+        </div>
+      </section>
       <sections className="experience">experiencia</sections>
       <section className="contact">contactame</section>
       <footer className="footer">footer</footer>
