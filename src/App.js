@@ -13,6 +13,8 @@ import npm from "./assets/logos/7.png";
 import photoshop from "./assets/logos/8.png";
 import figma from "./assets/logos/9.png";
 import clinica from "./assets/works/clinic.jpg";
+import xcaret from "./assets/works/xcaret.jpg";
+import turing from "./assets/works/turing.jpg";
 
 function App() {
   return (
@@ -97,13 +99,31 @@ function App() {
       <sections className="experience">
         <div className="margin">
           <h2 className="h2">últimos trabajos</h2>
-          <div>
-            <WorkCard
-              image={clinica}
-              name={"clínica dental revolución"}
-              linkPage={"/"}
-              linkCode={"/"}
-            />
+          <div className="cards">
+            <div className="card">
+              <WorkCard
+                image={clinica}
+                name={"clínica dental revolución"}
+                linkCode={"https://github.com/MarcoAlayn/Dental-Clinic-Landing"}
+                linkPage={"http://dental-clinic-landing-kappa.vercel.app/"}
+              />
+            </div>
+            <div className="card">
+              <WorkCard
+                image={turing}
+                name={"turing-ia"}
+                linkCode={"https://github.com/MarcoAlayn/Turing-IA-Web-Site"}
+                linkPage={"http://turing-ia-marcorobles.vercel.app/"}
+              />
+            </div>
+            <div className="card">
+              <WorkCard
+                image={xcaret}
+                name={"xcaret - landing page"}
+                linkCode={"https://github.com/MarcoAlayn/Xcaret-Landin-Page"}
+                linkPage={"http://xcaret-landin-page.vercel.app/"}
+              />
+            </div>
           </div>
         </div>
       </sections>
