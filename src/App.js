@@ -2,6 +2,7 @@ import "./App.css";
 import logo from "./assets/logo.png";
 import profile from "./assets/profile.png";
 import TechCard from "./components/TechCard";
+import WorkCard from "./components/workCard";
 import html from "./assets/logos/1.png";
 import css from "./assets/logos/2.png";
 import js from "./assets/logos/3.png";
@@ -11,6 +12,7 @@ import github from "./assets/logos/6.png";
 import npm from "./assets/logos/7.png";
 import photoshop from "./assets/logos/8.png";
 import figma from "./assets/logos/9.png";
+import clinica from "./assets/works/clinic.jpg";
 
 function App() {
   return (
@@ -91,7 +93,20 @@ function App() {
           <TechCard name={"photoshop"} img={photoshop} />
         </div>
       </section>
-      <sections className="experience">experiencia</sections>
+
+      <sections className="experience">
+        <div className="margin">
+          <h2 className="h2">últimos trabajos</h2>
+          <div>
+            <WorkCard
+              image={clinica}
+              name={"clínica dental revolución"}
+              linkPage={"/"}
+              linkCode={"/"}
+            />
+          </div>
+        </div>
+      </sections>
       <section className="contact">contactame</section>
       <footer className="footer">footer</footer>
     </div>

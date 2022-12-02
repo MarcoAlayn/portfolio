@@ -54,6 +54,14 @@ body {
   margin: auto 100px;
 }
 
+@media (max-width: 900px) {
+  .containerRow {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 .h2 {
   font-family: var(--secondary-font);
   font-size: 36px;
@@ -132,4 +140,16 @@ body {
   letter-spacing: 1.5px;
   line-height: 1.2;
   font-size: 21px;
+}
+
+/* tecnologies */
+.app .tecnologies {
+  height: 40vh;
+}
+
+/* experience section */
+.app .experience {
+  height: 100vh;
+  text-align: center;
+  line-height: 1.5;
 }
