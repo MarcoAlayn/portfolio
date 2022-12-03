@@ -19,28 +19,29 @@ import turing from "./assets/works/turing.jpg";
 import whatsapp from "./assets/logos/10.png";
 import linkedin from "./assets/logos/12.png";
 import email from "./assets/logos/11.png";
+import cv from "./assets/cv/cv.pdf";
 
 function App() {
   return (
     <div className="app ">
-      <header className="header">
+      <header id="header" className="header">
         <div className="margin">
           <div className="containerRow ">
             <img src={logo} alt="logo" className="logo" />
             <nav className="navbar">
-              <a href="/" className="link">
+              <a href="#header" className="link">
                 inicio
               </a>
-              <a href="/" className="link">
+              <a href="#about" className="link">
                 sobre mi
               </a>
-              <a href="/" className="link">
+              {/* <a href="#tech" className="link">
                 tecnologías
-              </a>
-              <a href="/" className="link">
+              </a> */}
+              <a href="#exp" className="link">
                 experiencia
               </a>
-              <a href="/" className="link">
+              <a href="#contact" className="link">
                 contacto
               </a>
             </nav>
@@ -54,15 +55,17 @@ function App() {
               </h1>
               <p>Bienvenid@ a mi portafolio</p>
               <div className="btn containerRow margin">
-                <a href="/">Descargar CV</a>
-                <a href="/">Contactame</a>
+                <a href={cv} download="Cv-MarcoRobles-Frontend-Dev">
+                  Descargar CV
+                </a>
+                <a href="#contact">Contactame</a>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <section className="about containerColumn">
+      <section id="about" className="about containerColumn">
         <div className="containerRow margin">
           <div className="profile containerColumn">
             <img src={profile} alt="profile" />
@@ -85,7 +88,7 @@ function App() {
         </div>
       </section>
 
-      <section className="tecnologies margin">
+      <section id="tech" className="tecnologies margin">
         <h3 className="h3">tecnologias que utilizo</h3>
         <div className="containerRow ">
           <TechCard name={"html"} img={html} />
@@ -100,7 +103,7 @@ function App() {
         </div>
       </section>
 
-      <sections className="experience">
+      <sections id="exp" className="experience">
         <div className="margin">
           <h2 className="h2">últimos trabajos</h2>
           <div className="cards">
@@ -132,7 +135,7 @@ function App() {
         </div>
       </sections>
 
-      <section className="contact ">
+      <section id="contact" className="contact ">
         <div className="margin">
           <h2 className="h2">contáctame</h2>
           <p className="contacText">
