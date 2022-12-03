@@ -1,0 +1,15 @@
+.socialCard {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.socialCard img {
+  width: 100px;
+}
+
+.socialCard p {
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}

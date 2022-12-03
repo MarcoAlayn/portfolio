@@ -157,3 +157,21 @@ body {
 .app .experience .cards .card {
   padding: 0px 0px 150px 0px;
 }
+
+/* contact section */
+.app .contact {
+  text-align: center;
+}
+
+.app .contact .contactCards {
+  justify-content: space-evenly;
+}
+
+.app .contact .contactCards .socCar {
+  border: 1px solid var(--black);
+  padding: 30px;
+}
+
+.app .contact .contactCards .socCar:hover {
+  border: 1px solid var(--white);
+}

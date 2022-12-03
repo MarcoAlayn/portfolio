@@ -3,6 +3,7 @@ import logo from "./assets/logo.png";
 import profile from "./assets/profile.png";
 import TechCard from "./components/TechCard";
 import WorkCard from "./components/workCard";
+import SocialCard from "./components/socialCard";
 import html from "./assets/logos/1.png";
 import css from "./assets/logos/2.png";
 import js from "./assets/logos/3.png";
@@ -15,6 +16,9 @@ import figma from "./assets/logos/9.png";
 import clinica from "./assets/works/clinic.jpg";
 import xcaret from "./assets/works/xcaret.jpg";
 import turing from "./assets/works/turing.jpg";
+import whatsapp from "./assets/logos/10.png";
+import linkedin from "./assets/logos/12.png";
+import email from "./assets/logos/11.png";
 
 function App() {
   return (
@@ -127,7 +131,35 @@ function App() {
           </div>
         </div>
       </sections>
-      <section className="contact">contactame</section>
+
+      <section className="contact ">
+        <div className="margin">
+          <h2 className="h2">contáctame</h2>
+          <div className="contactCards containerRow">
+            <div className="socCar">
+              <SocialCard
+                name={"whatsapp"}
+                img={whatsapp}
+                link={"https://wa.link/ocrptc"}
+              />
+            </div>
+            <div className="socCar">
+              <SocialCard
+                name={"linkedin"}
+                img={linkedin}
+                link={"https://www.linkedin.com/in/marcorobles-developer/"}
+              />
+            </div>
+            <div className="socCar">
+              <SocialCard
+                name={"e-mail"}
+                img={email}
+                link={"mailto:marc_rob92@hotmail.com"}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <footer className="footer">footer</footer>
     </div>
   );
