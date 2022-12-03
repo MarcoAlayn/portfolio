@@ -135,6 +135,9 @@ function App() {
       <section className="contact ">
         <div className="margin">
           <h2 className="h2">contáctame</h2>
+          <p className="contacText">
+            Envíame un mensaje a través del medio de prefieras...{" "}
+          </p>
           <div className="contactCards containerRow">
             <div className="socCar">
               <SocialCard
@@ -160,7 +163,11 @@ function App() {
           </div>
         </div>
       </section>
-      <footer className="footer">footer</footer>
+      <footer className="footer containerRow ">
+        <p>Gracias por tu visita </p>
+        <img src={logo} alt={logo} />
+        <p>Copyright © 2022</p>
+      </footer>
     </div>
   );
 }

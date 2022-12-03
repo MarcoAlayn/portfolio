@@ -161,6 +161,7 @@ body {
 /* contact section */
 .app .contact {
   text-align: center;
+  height: 60vh;
 }
 
 .app .contact .contactCards {
@@ -174,4 +175,20 @@ body {
 
 .app .contact .contactCards .socCar:hover {
   border: 1px solid var(--white);
+}
+
+.app .contact .contacText {
+  font-size: 21px;
+}
+
+.app .footer {
+  justify-content: center;
+  background: var(--white);
+  color: var(--black);
+  height: 35px;
+}
+
+.app .footer :nth-child(2) {
+  transform: scale(0.5) translateX(-10px);
+  margin: 0px 50px;
 }
